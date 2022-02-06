@@ -49,7 +49,9 @@ export default function Navbar() {
             <p style={{ color: "black" }}>
               {context.user && context.user.email}
             </p>
-            <p onClick={() => context.logOut()}>Logout</p>
+            <p style={{ cursor: "pointer" }} onClick={() => context.logOut()}>
+              Logout
+            </p>
           </div>
         )}
       </div>
