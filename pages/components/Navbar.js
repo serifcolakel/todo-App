@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import AuthContext from "../../stores/authContext";
-import styles from "../../styles/Home.module.css";
+import styles from "../../styles/Home.module.scss";
 export default function Navbar() {
   const [show, setShow] = React.useState(false);
   const context = useContext(AuthContext);

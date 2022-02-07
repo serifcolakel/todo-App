@@ -1,7 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import AuthContext from "../stores/authContext";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 import axios from "axios";
 import Navbar from "./components/Navbar";
 export default function Todo() {

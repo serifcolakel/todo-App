@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "../styles/globals.scss";
 import { AuthContextProdiver } from "../stores/authContext";
 
 function MyApp({ Component, pageProps }) {

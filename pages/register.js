@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 import axios from "axios";
 import router from "next/router";
 import AuthContext from "../stores/authContext";
