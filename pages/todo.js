@@ -4,6 +4,10 @@ import AuthContext from "../stores/authContext";
 import styles from "../styles/Home.module.scss";
 import axios from "axios";
 import Navbar from "./components/Navbar";
+import { FaPencilAlt } from "react-icons/fa";
+import { RiDeleteBin5Fill } from "react-icons/ri";
+import { GiSave } from "react-icons/gi";
+
 export default function Todo() {
   const [edit, setEdit] = React.useState(null);
   const context = useContext(AuthContext);
@@ -120,22 +124,21 @@ export default function Todo() {
     );
   };
   return (
-    <>
+    <div className={styles.todo}>
       <Navbar />
-      <div className={styles.main}>
-        <form className={styles.registerForm} onSubmit={createTodo}>
-          <input type="text" placeholder="Add todo" name="title" ref={ref} />
-          <button type="submit">Add</button>
-        </form>
-
-        {context?.todos?.map((todo) => (
-          <div className={styles.todosItems} key={todo._id}>
-            <div className={styles.todosItemsCheckBox}>
-              <input
-                type="checkbox"
-                checked={todo.completed}
-                onChange={(e) => completeTodo(todo, e)}
-              />
+      <form className={styles.form} onSubmit={createTodo}>
+        <input type="text" placeholder="Add todo" name="title" ref={ref} />
+        <button type="submit">Add</button>
+      </form>
+      {context?.todos?.map((todo) => (
+        <div className={styles.todosItems} key={todo._id}>
+          <div className={styles.todosItemsCheckBox}>
+            <input
+              type="checkbox"
+              checked={todo.completed}
+              onChange={(e) => completeTodo(todo, e)}
+            />
+            <div>
               {edit === todo._id ? (
                 <input
                   key={todo._id + "input"}
@@ -169,20 +172,26 @@ export default function Todo() {
                 </span>
               )}
             </div>
-            <div className={styles.todosItemsChange}>
-              <button onClick={() => deleteTodo(todo)}>DELETE</button>
-              <button
-                onClick={() =>
-                  edit === todo._id ? updateTodo(todo) : setEdit(todo._id)
-                }
-                disabled={todo.completed}
-              >
-                {edit === todo._id ? "SAVE" : "EDIT"}
-              </button>
-            </div>
           </div>
-        ))}
-      </div>
-    </>
+          <div className={styles.todosItemsChange}>
+            <button onClick={() => deleteTodo(todo)}>
+              <RiDeleteBin5Fill size={30} />
+            </button>
+            <button
+              onClick={() =>
+                edit === todo._id ? updateTodo(todo) : setEdit(todo._id)
+              }
+              disabled={todo.completed}
+            >
+              {edit === todo._id ? (
+                <GiSave size={30} />
+              ) : (
+                <FaPencilAlt size={30} />
+              )}
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
   );
 }

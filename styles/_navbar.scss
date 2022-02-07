@@ -1,0 +1,41 @@
+@import "./mixins", "./breakpoints", "./veriables";
+
+.navbar {
+  color: $primary;
+  background-color: $gray;
+  height: 80px;
+  width: 100%;
+  padding: 0 10px;
+  @include flexCenter(row, space-between);
+  @include md {
+    padding: 1rem 16rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .navbarBrand {
+    position: relative;
+    @include flexCenter(column);
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      cursor: pointer;
+      border: 4px solid $primary;
+    }
+    .dropdown {
+      width: 250px;
+      height: auto;
+      padding: 10px;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      @include backgroundImage($contentBackGround, 100%);
+      background-color: $white;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+      text-align: center;
+    }
+  }
+}

@@ -155,39 +155,3 @@
   font-weight: bold;
   border-radius: 5px;
 }
-
-.todosItems {
-  width: 100%;
-  padding: 10px;
-  @include flexCenter(column, space-between);
-}
-.todosItemsCheckBox {
-  @include flexCenter(row);
-  width: 100%;
-
-  font-size: 20px;
-
-  text-transform: uppercase;
-}
-.todosItemsCheckBox input {
-  width: 50px;
-  background-color: $yellow;
-  height: 50px;
-  margin-right: 10px;
-}
-.todosItemsChange {
-  @include flexCenter(row);
-}
-.todosItemsChange p {
-  margin-right: 20px;
-}
-
-.navbar {
-  color: $error;
-  background-color: $grayLighter;
-  height: 80px;
-  width: 100%;
-  @include flexCenter(row, space-between);
-
-  padding: 1rem 2rem;
-}

@@ -7,42 +7,15 @@ export default function Navbar() {
 
   return (
     <div className={styles.navbar}>
-      <h1>TODO MyApp</h1>
-      <div
-        style={{
-          position: "relative",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
+      <h1>MyApp</h1>
+      <div className={styles.navbarBrand}>
         <img
           src="https://i.hizliresim.com/hcw5gba.jpg"
           alt="user"
           onClick={() => setShow(!show)}
-          style={{
-            width: "50px",
-            height: "50px",
-            borderRadius: "100%",
-            cursor: "pointer",
-          }}
         />
         {show && (
-          <div
-            style={{
-              backgroundColor: "white",
-              width: "200px",
-              height: "auto",
-              padding: "10px",
-              position: "absolute",
-              top: 60,
-              borderRadius: "2px",
-              boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)",
-              right: 10,
-              textAlign: "center",
-            }}
-          >
-            {" "}
+          <div className={styles.dropdown}>
             <p style={{ color: "black" }}>
               {context.user && context.user.username.toUpperCase()}
             </p>
