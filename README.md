@@ -26,9 +26,7 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -52,18 +50,57 @@ In this project, I developed the TODO application, which is one of the projects 
     </div>
     </li>
     <li>
-    <p>Home Page</p>
+    <p>Home Page Responsive</p>
       <div>
         <a href="https://github.com/serifcolakel">
-            <img src="https://i.hizliresim.com/73ov4ud.jpg" alt="Logo" width="100%" height="100%">
+            <img src="https://i.hizliresim.com/q11q29r.jpg" alt="Logo" width="100%" height="100%">
         </a>
     </div>
     </li>
     <li>
-    <p>Home Page</p>
+    <p>Login Page</p>
       <div>
         <a href="https://github.com/serifcolakel">
-            <img src="https://i.hizliresim.com/73ov4ud.jpg" alt="Logo" width="100%" height="100%">
+            <img src="https://i.hizliresim.com/8x0zk1l.jpg" alt="Logo" width="100%" height="100%">
+        </a>
+    </div>
+    </li>
+    <li>
+    <p>Login Page Responsive</p>
+      <div>
+        <a href="https://github.com/serifcolakel">
+            <img src="https://i.hizliresim.com/mrrsa5h.jpg" alt="Logo" width="100%" height="100%">
+        </a>
+    </div>
+    </li>
+    <li>
+    <p>Register Page </p>
+      <div>
+        <a href="https://github.com/serifcolakel">
+            <img src="https://i.hizliresim.com/m94rvhv.jpg" alt="Logo" width="100%" height="100%">
+        </a>
+    </div>
+    </li>
+    <p>Register Page Responsive</p>
+      <div>
+        <a href="https://github.com/serifcolakel">
+            <img src="https://i.hizliresim.com/m6vi14i.jpg" alt="Logo" width="100%" height="100%">
+        </a>
+    </div>
+    </li>
+    </li>
+    <p>Register Page</p>
+      <div>
+        <a href="https://github.com/serifcolakel">
+            <img src="https://i.hizliresim.com/8yubazv.jpg" alt="Logo" width="100%" height="100%">
+        </a>
+    </div>
+    </li>
+        </li>
+    <p>Todo Page Responsive</p>
+      <div>
+        <a href="https://github.com/serifcolakel">
+            <img src="https://i.hizliresim.com/2mc9szd.jpg" alt="Logo" width="100%" height="100%">
         </a>
     </div>
     </li>
