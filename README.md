@@ -150,7 +150,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 3. Enter your API in `.env`
    ```.env
-   NEXT_PUBLIC_API_URL="ENTER YOUR API";
+   NEXT_PUBLIC_API_URL="ENTER YOUR API"
    ```
 4. Run the app
    ```sh
