@@ -107,12 +107,6 @@ In this project, I developed the TODO application, which is one of the projects 
   </ol>
 </details>
 
-<div align="right">
-  <a href="#top">
-      <img src="https://i.hizliresim.com/oxq9b8i.png" alt="Logo" width="40px" height="40px">
-  </a>
-</div>
-
 ### Built With
 
 In this section, the technologies used in the construction of the project are included.
@@ -122,12 +116,6 @@ In this section, the technologies used in the construction of the project are in
 - [MongoDB](https://www.mongodb.com/)
 - [Heroku](https://www.heroku.com/home)
 - [Vercel](https://vercel.com/)
-
-<div align="right">
-  <a href="#top">
-      <img src="https://i.hizliresim.com/oxq9b8i.png" alt="Logo" width="40px" height="40px">
-  </a>
-</div>
 
 <!-- GETTING STARTED -->
 
@@ -179,12 +167,6 @@ In this section, you can access the documentation of the libraries used during t
 
 _For more examples, please refer to the [MongoDB Documentation](https://docs.mongodb.com/), [Next.js Documentation](https://nextjs.org/), [SASS Documentation](https://sass-lang.com/documentation)._
 
-<div align="right">
-  <a href="#top">
-      <img src="https://i.hizliresim.com/oxq9b8i.png" alt="Logo" width="40px" height="40px">
-  </a>
-</div>
-
 <!-- ROADMAP -->
 
 ## Roadmap
@@ -200,12 +182,6 @@ _For more examples, please refer to the [MongoDB Documentation](https://docs.mon
 
 See the [open issues](https://github.com/serifcolakel/todo-App/issues) for a full list of proposed features (and known issues).
 
-<div align="right">
-  <a href="#top">
-      <img src="https://i.hizliresim.com/oxq9b8i.png" alt="Logo" width="40px" height="40px">
-  </a>
-</div>
-
 <!-- CONTRIBUTING -->
 
 ## Contributing
@@ -214,14 +190,6 @@ Contributions are what make the open source community such an amazing place to l
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
-
-<div align="right">
-  <a href="#top">
-      <img src="https://i.hizliresim.com/oxq9b8i.png" alt="Logo" width="40px" height="40px">
-  </a>
-</div>
-
-<!-- LICENSE -->
 
 <!-- CONTACT -->
 
