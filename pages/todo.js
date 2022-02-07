@@ -138,7 +138,7 @@ export default function Todo() {
               checked={todo.completed}
               onChange={(e) => completeTodo(todo, e)}
             />
-            <div>
+            <div className={styles.todoTitle}>
               {edit === todo._id ? (
                 <input
                   key={todo._id + "input"}
@@ -147,9 +147,9 @@ export default function Todo() {
                       ? {
                           textDecoration: "line-through",
                           color: "green",
-                          width: "50%",
+                          width: "100%",
                         }
-                      : { width: "50%", textDecoration: "none" }
+                      : { width: "100%", textDecoration: "none" }
                   }
                   type="text"
                   defaultValue={todo.title}
@@ -163,9 +163,9 @@ export default function Todo() {
                       ? {
                           textDecoration: "line-through",
                           color: "green",
-                          width: "50%",
+                          width: "100%",
                         }
-                      : { width: "50%", textDecoration: "none" }
+                      : { width: "100%", textDecoration: "none" }
                   }
                 >
                   {todo.title}
