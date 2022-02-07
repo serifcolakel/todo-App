@@ -107,7 +107,11 @@ In this project, I developed the TODO application, which is one of the projects 
   </ol>
 </details>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<div align="right">
+  <a href="#top">
+      <img src="https://i.hizliresim.com/oxq9b8i.png" alt="Logo" width="40px" height="40px">
+  </a>
+</div>
 
 ### Built With
 
@@ -119,7 +123,11 @@ In this section, the technologies used in the construction of the project are in
 - [Heroku](https://www.heroku.com/home)
 - [Vercel](https://vercel.com/)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<div align="right">
+  <a href="#top">
+      <img src="https://i.hizliresim.com/oxq9b8i.png" alt="Logo" width="40px" height="40px">
+  </a>
+</div>
 
 <!-- GETTING STARTED -->
 
@@ -157,7 +165,11 @@ _Below is an example of how you can instruct your audience on installing and set
    npm run dev
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<div align="right">
+  <a href="#top">
+      <img src="https://i.hizliresim.com/oxq9b8i.png" alt="Logo" width="40px" height="40px">
+  </a>
+</div>
 
 <!-- USAGE EXAMPLES -->
 
@@ -167,7 +179,11 @@ In this section, you can access the documentation of the libraries used during t
 
 _For more examples, please refer to the [MongoDB Documentation](https://docs.mongodb.com/), [Next.js Documentation](https://nextjs.org/), [SASS Documentation](https://sass-lang.com/documentation)._
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<div align="right">
+  <a href="#top">
+      <img src="https://i.hizliresim.com/oxq9b8i.png" alt="Logo" width="40px" height="40px">
+  </a>
+</div>
 
 <!-- ROADMAP -->
 
@@ -184,7 +200,11 @@ _For more examples, please refer to the [MongoDB Documentation](https://docs.mon
 
 See the [open issues](https://github.com/serifcolakel/todo-App/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<div align="right">
+  <a href="#top">
+      <img src="https://i.hizliresim.com/oxq9b8i.png" alt="Logo" width="40px" height="40px">
+  </a>
+</div>
 
 <!-- CONTRIBUTING -->
 
@@ -195,7 +215,11 @@ Contributions are what make the open source community such an amazing place to l
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<div align="right">
+  <a href="#top">
+      <img src="https://i.hizliresim.com/oxq9b8i.png" alt="Logo" width="40px" height="40px">
+  </a>
+</div>
 
 <!-- LICENSE -->
 
@@ -217,4 +241,8 @@ Don't forget to give the project a star! Thanks again!
 
 Project Link: [https://github.com/serifcolakel/todo-App](https://github.com/serifcolakel/todo-App)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<div align="right">
+  <a href="#top">
+      <img src="https://i.hizliresim.com/oxq9b8i.png" alt="Logo" width="40px" height="40px">
+  </a>
+</div>
