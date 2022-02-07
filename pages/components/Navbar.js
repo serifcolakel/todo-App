@@ -4,7 +4,7 @@ import styles from "../../styles/Home.module.scss";
 export default function Navbar() {
   const [show, setShow] = React.useState(false);
   const context = useContext(AuthContext);
-  console.log("context", context);
+
   return (
     <div className={styles.navbar}>
       <h1>TODO MyApp</h1>

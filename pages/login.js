@@ -33,33 +33,43 @@ export default function Login() {
         localStorage.setItem("user", JSON.stringify(response.data.user));
         router.push("/todo");
         context.clearSnackbar();
-      }, 2000);
+      }, 1000);
     } catch (error) {
-      console.log(error);
+      if (error.response) {
+        context.setSnackbar({
+          open: true,
+          message: error.response.data.message,
+          variant: "error",
+        });
+        setTimeout(() => {
+          context.clearSnackbar();
+        }, 1000);
+      }
     }
   };
   return (
     <div className={styles.register}>
-      <h1>Login</h1>
+      <div className={styles.content}>
+        <h1>Login</h1>
+        <form className={styles.form} onSubmit={login}>
+          <input
+            type="text"
+            name="username"
+            placeholder="Username"
+            onChange={handleChange}
+          />
 
-      <form className={styles.registerForm} onSubmit={login}>
-        <input
-          type="text"
-          name="username"
-          placeholder="Username"
-          onChange={handleChange}
-        />
-
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          onChange={handleChange}
-        />
-        <button type="submit">Login</button>
-      </form>
-      <p>Do not have a account yet? </p>
-      <button onClick={() => router.push("/register")}>Register</button>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            onChange={handleChange}
+          />
+          <button type="submit">Login</button>
+        </form>
+        <p>Do not have a account yet? </p>
+        <button onClick={() => router.push("/register")}>Register</button>
+      </div>
     </div>
   );
 }

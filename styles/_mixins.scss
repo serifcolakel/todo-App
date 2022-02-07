@@ -9,3 +9,15 @@
   align-items: $items;
   flex-direction: $direction;
 }
+
+@mixin backgroundImage(
+  $image: "",
+  $size: cover,
+  $position: center,
+  $repeat: no-repeat
+) {
+  background-image: $image;
+  background-size: $size;
+  background-position: $position;
+  background-repeat: $repeat;
+}

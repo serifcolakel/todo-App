@@ -35,7 +35,7 @@ export default function Register() {
       setTimeout(() => {
         router.push("/");
         context.clearSnackbar();
-      }, 2000);
+      }, 1000);
     } catch (error) {
       if (error.response) {
         context.setSnackbar({
@@ -43,44 +43,52 @@ export default function Register() {
           message: error.response.data.message,
           variant: "error",
         });
+        setTimeout(() => {
+          context.clearSnackbar();
+        }, 1000);
       } else {
         context.setSnackbar({
           open: true,
           message: error.message,
           variant: "error",
         });
+        setTimeout(() => {
+          context.clearSnackbar();
+        }, 1000);
       }
     }
   };
 
   return (
     <div className={styles.register}>
-      <h1>Register</h1>
-      <form className={styles.registerForm} onSubmit={register}>
-        <input
-          type="text"
-          name="username"
-          placeholder="Username"
-          onChange={handleChange}
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          onChange={handleChange}
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          onChange={handleChange}
-        />
-        <button disabled={data.confirm} type="submit">
-          Register
-        </button>
-      </form>
-      <p>Already a member ? </p>
-      <button onClick={() => router.push("/login")}>Login</button>
+      <div className={styles.content}>
+        <h1>Register</h1>
+        <form className={styles.form} onSubmit={register}>
+          <input
+            type="text"
+            name="username"
+            placeholder="Username"
+            onChange={handleChange}
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            onChange={handleChange}
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            onChange={handleChange}
+          />
+          <button disabled={data.confirm} type="submit">
+            Register
+          </button>
+        </form>
+        <p>Already a member ? </p>
+        <button onClick={() => router.push("/login")}>Login</button>
+      </div>
     </div>
   );
 }

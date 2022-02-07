@@ -61,24 +61,21 @@ export const AuthContextProdiver = ({ children }) => {
       }}
     >
       {snackbar.open && (
-        <div
-          className={snackbar.variant ? `${styles.success}` : `${styles.error}`}
-        >
-          <p
-            style={{
-              color: "black",
-              fontSize: "1.5rem",
-              fontWeight: "bold",
-              textAlign: "center",
-              padding: "1rem",
-              width: "50%",
-              height: "50%",
-            }}
-          >
-            {snackbar.message}
-          </p>
+        <div className={styles.Alert}>
+          <div className={styles.AlertContent}>
+            <p
+              className={
+                snackbar.variant === "success"
+                  ? `${styles.success}`
+                  : `${styles.error}`
+              }
+            >
+              {snackbar.message}
+            </p>
+          </div>
         </div>
       )}
+
       {children}
     </AuthContext.Provider>
   );

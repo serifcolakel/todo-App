@@ -1,0 +1,69 @@
+@import "./mixins", "./breakpoints", "./veriables";
+
+.register {
+  width: 100%;
+  height: 100vh;
+  color: $primary;
+  text-align: center;
+  @include backgroundImage($formBackground, 80%);
+  background-color: $black;
+  padding: 12px;
+  @include flexCenter(column);
+  .content {
+    width: 100%;
+    height: 80vh;
+    @include backgroundImage($contentBackGround, 100%);
+
+    border: 1px solid $primary;
+    border-radius: 8px;
+    background-color: $whiteOpacity;
+    @include flexCenter(column);
+    h1 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+    p {
+      color: $black;
+      font-size: 1rem;
+    }
+    button {
+      width: 30%;
+      height: 40px;
+      border-radius: 8px;
+      background-color: $black;
+      color: $primary;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      &:hover {
+        background-color: $primary;
+        color: $black;
+      }
+      @include md {
+        font-size: 1.5rem;
+        height: 50px;
+      }
+    }
+    .form {
+      width: 100%;
+      @include flexCenter(column);
+      input {
+        width: 80%;
+        height: 40px;
+        border-radius: 4px;
+        background-color: $white;
+        color: $primary;
+        margin-bottom: 12px;
+      }
+    }
+    @include md {
+      width: 50%;
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+  @include md {
+    @include backgroundImage($formBackground, 30%, right);
+  }
+}
