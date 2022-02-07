@@ -63,6 +63,9 @@
       height: 100%;
       object-fit: contain;
     }
+    .header {
+      padding: 0 16rem;
+    }
     .content {
       padding-top: 20px;
       @include flexCenter(row, space-between);
